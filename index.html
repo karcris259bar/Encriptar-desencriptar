@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/CriscoE-D-01.png" type="image/x-icon"/>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script>
+    <title>Encriptar-Desencriptar</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="contenedor" >
+            <h1><img src="img/CriscoE-D-01.png" alt="Logo"></h1>
+            <p class="inicio">ENCRIPTAR O DESENCRIPTAR</p>
+    
+        </div>
+
+    </header>
+
+    <main>
+        </section class="container">
+            <div class="encriptar">
+                <textarea name="texto" class="texto"  id="texto" cols="30" rows="10" placeholder="Por favor ingrese el texto aquí"></textarea>
+                <div class="nota">
+                    <p>Atención</p>
+                    <ul>
+                        <li>Solo letras minúsculas</li>
+                        <li>No incluya acentos</li>
+                        <li>No incluya caracteres especiales</li>
+                    </ul>
+                </div>    
+                <div class="btn">
+                    <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar
+                    </button>
+                        <!-- El boton desencriptar puede crearse c/input tambien -->
+                    <input type="button" class="btn-desencriptar"           value="Desencriptar" onclick="desencriptar()"
+                    />
+                </div>
+        </section>
+        <section>
+            <div class="encriptado">
+                <img src="./img/img_02.png" alt="En busca de un mensaje" id="muñeco">
+                <div class="mensaje-encriptado"             id="mensaje-encriptado">
+                    <h2 id="titulo-mensaje">No se encontro ningún mensaje</h2>
+                    <p id="parrafo">ingrese el texto a Encriptar o Desencriptar</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright" style="margin-top: 35%; margin-left: 5%;">&copy Copyright: Alura ONE - Cristina Correa - Marzo 2024</p>
+        <br>
+    </footer>
+
+    <script src="script.js"></script>    
+</body>
+
+</html>
